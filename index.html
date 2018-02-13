@@ -20,40 +20,68 @@
   <!--flexbox with name, logo, and nav-->
       <div class= "topbar">
   <!--flexbox with the name and logo inside the topbar flexbox-->
-        <div class="logo-container">
+        <div id="logocontainer" class="logo-container" onclick="display('homepage')">
               <img class="logo" src="logo.png"/>
               <div class="name">Benjamin R. Unger</div>
-                      </div>
+        </div>
+  <!--todo: change the anchors to divs-->
         <div class="nav">
             <ul>
-                <li>
+                <li onclick="display('writing')">
                   <img class="buttonlogo" src="logo.png"/>
-                  <a href="#/home.html">writing</a>
+                  <a>writing</a>
                 </li>
-                <li>
+                <li onclick="display('research')">
                   <img class="buttonlogo" src="logo.png"/>
-                  <a href="#/about.html">research</a>
+                  <a>research</a>
                 </li>
-                <li>
+                <li onclick="display('design')">
                   <img class="buttonlogo" src="logo.png"/>
-                  <a href="#/contact.html">design</a>
+                  <a>design</a>
                 </li>
-                <li>
+                <li onclick="display('blog')">
                   <img class="buttonlogo" src="logo.png"/>
-                  <a href="#/contact.html">blog</a>
+                  <a>blog</a>
                 </li>
             </ul>
           </div>
         </div>
-        <div class="homepage">
+<!-- this is where the page content starts -->
+
+        <div class="page-content">
+
+          <div id="homepage">
             Writer & Researcher
-        </div>
-        <div id="footer">
-            <p>
-                Webpage made by <a href="/" target="_blank">Benjamin R. Unger</a>
-            </p>
+            <div class="description">
+             I'm interested in writing and research. I've got an eye for
+             design too.
+           </div>
+          </div>
+
+          <div id="writing">
+        the writing page
+          </div>
+
+          <div id="research">
+        the research page
+          </div>
+
+          <div id="design">
+        the design page
+          </div>
+
+          <div id="blog">
+        the blog page
+          </div>
+
         </div>
     </div>
+    <div id="footer">
+      <p>
+        Webpage made by Benjamin R. Unger
+      </p>
+    </div>
 
+    <script src="scripts.js"></script>
 </body>
 </html>
