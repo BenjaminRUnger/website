@@ -10,6 +10,9 @@ a {
 html, body {
   margin: 0;
   padding: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .page {
@@ -90,20 +93,39 @@ html, body {
   padding: 5%;
 }
 
+.subheader {
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  background-color: black;
+  margin: 25px;
+  border: solid black 25px;
+  text-transform: uppercase;
+}
+
 #writing {
   display: none;
+  flex-direction: column;
 }
 
 #research {
   display: none;
+  flex-direction: column;
 }
 
 #design {
   display: none;
+  flex-direction: column;
 }
 
 #blog {
   display: none;
+  flex-direction: column;
+}
+
+#homepage {
+  flex-direction: column;
+  max-width: 600px;
 }
 
 footer{
