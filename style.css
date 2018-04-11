@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -18,6 +22,7 @@ html, body {
 .page {
     margin: 10px 10px 50px 10px;
     position: relative;
+    /* height: calc(100% - 100px); */
 }
 
 .topbar {
@@ -29,12 +34,17 @@ html, body {
   }
 
 .logo-container {
-    margin-top: 5px;
+    margin-top: 1%;
+    margin-left: 5%;
     display: flex;
     flex-direction: row;
     align-content: center;
     height: 43px;
-    min-width: 600px;
+    min-width: 570px;
+}
+
+.logo-container:hover {
+    cursor: pointer;
 }
 
 .logo {
@@ -45,6 +55,7 @@ html, body {
     font-weight: 400;
     line-height: 40px;
     text-transform: uppercase;
+    user-select: none;
 }
 
 .buttonlogo{
@@ -55,7 +66,8 @@ html, body {
 .nav {
     text-align: right;
     text-transform: uppercase;
-    margin-left: 15px;
+    margin: 0 7%;
+    user-select: none;
 }
 
 .nav ul {
@@ -72,6 +84,10 @@ html, body {
     flex-direction: row;
     height: 62px;
     align-items: center;
+}
+
+.nav ul li:hover{
+    cursor: pointer;
 }
 
 .nav ul li a{
@@ -111,11 +127,13 @@ html, body {
   background-color: black;
   max-width: 600px;
   margin: 25px;
+  margin-left: 10%;
   text-transform: uppercase
 }
 
 .portfolio-text {
   padding-top: 88px;
+  user-select: none;
 }
 
 .description {
@@ -152,16 +170,12 @@ html, body {
 
 footer{
     border-top: 1px #ccc solid;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+    position: relative;
 }
     footer p{
         text-align: center;
         text-transform: uppercase;
         font-size: 80%;
         color: grey;
+        padding-bottom: 5px;
     }
